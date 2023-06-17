@@ -1,0 +1,6 @@
+export const BASE_URL = 'https://elredtest.s3.amazonaws.com'
+export const ASSESSMENT_API = '/reactAssignment'
+export const GET_CATEGORIES = '/getCategories'
+export const GET_SUB_CATEGORIES = '/getSubCategory_'
+export const GET_PRODUCTS = '/getProduct_'
+export const JSON_EXTENSION = '.json'

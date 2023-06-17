@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import './style/App.css';
+import Header from './layout/Header';
+import Sidebar from './layout/Sidebar';
+import Routing from './routes/Routing';
+import Cart from './pages/cart';
 
 function App() {
+  const [menuActive, setMenuActive] = useState(true)
+
+  const handleSidebar = () => {
+    setMenuActive(!menuActive)
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <Header menuActive={menuActive} toggleSidebar={handleSidebar} />
+        <Sidebar menuActive={menuActive} />
+        <div className={`main-wrapper ${menuActive ? "" : "mainActive"}`}>
+          <Routing />
+        </div>
+        <Cart />
+      </BrowserRouter>
+    </>
   );
 }
 

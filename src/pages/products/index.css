@@ -1,0 +1,16 @@
+.sub-category-section {
+    padding: 30px 20px;
+    transition: 0.3s;
+}
+
+.sub-card {
+    position: relative;
+    padding: 0px;
+    transition: 0.4s;
+}
+
+
+.sub-content {
+    left: 42%;
+    transform: translateX(-42%);
+}

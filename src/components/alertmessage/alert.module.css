@@ -1,0 +1,44 @@
+.alertMsg {
+    width: 100%;
+    max-width: 250px;
+    padding: 8px 10px;
+    border: 1px solid #dddddd;
+    background: #000;
+    opacity: 0.6;
+    position: relative;
+    border-radius: 10px;
+}
+
+.error {
+    color: #842029;
+    background: red;
+    border: 1px solid #f5c2c7;
+}
+
+.success {
+    color: #0f5132;
+    background: #d1e7dd;
+    border: 1px solid #badbcc;
+}
+
+.warning {
+    color: #664d03;
+    background: #fff3cd;
+    border: 1px solid #ffecb5;
+}
+
+.info {
+    color: #084298;
+    background: #cfe2ff;
+    border: 1px solid #b6d4fe;
+}
+
+.close {
+    font-size: 16px;
+    color: #000;
+}
+
+.hide {
+    display: none;
+    transition: 0.3s;
+}
